@@ -1,0 +1,11 @@
+rules:
+  - name: telnet disabled
+    must_not_match: 'transport input telnet'
+  - name: SSH v2 only
+    must_match: 'ip ssh version 2'
+  - name: NTP configured
+    must_match: '^ntp server'
+  - name: login banner present
+    must_match: '^banner (login|motd)'
+  - name: no plaintext enable password
+    must_not_match: '^enable password'

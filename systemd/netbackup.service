@@ -1,0 +1,7 @@
+[Unit]
+Description=Network configuration backup
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/netconf-backup-automation
+EnvironmentFile=/etc/netbackup.env
+ExecStart=/usr/bin/python3 backup.py

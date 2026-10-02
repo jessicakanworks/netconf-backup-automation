@@ -1,0 +1,7 @@
+[Unit]
+Description=Run network backup nightly
+[Timer]
+OnCalendar=*-*-* 01:00:00
+Persistent=true
+[Install]
+WantedBy=timers.target

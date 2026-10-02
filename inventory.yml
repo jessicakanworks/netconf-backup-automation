@@ -1,0 +1,10 @@
+devices:
+  - host: core-rtr-01
+    ip: 10.0.0.1
+    device_type: cisco_xe
+  - host: dist-sw-01
+    ip: 10.0.0.10
+    device_type: cisco_ios
+  - host: edge-mx-01
+    ip: 10.0.0.20
+    device_type: juniper_junos
